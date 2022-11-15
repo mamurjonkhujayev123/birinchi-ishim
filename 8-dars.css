@@ -1,0 +1,105 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+ body {   /* body{ orqa fonni uzgartirish */
+    background-image: linear-gradient(to right, rgba(91, 116, 204, 0.5), rgba(183, 127, 127, 0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* bu cardlarni urtaga joylaydi */
+}
+
+.footer-img img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.cards{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+.card{
+    width: 28%;
+    height: 500px;
+    /* border:  solid; */
+    box-shadow: 0 0 5px;
+    border-radius: 15px;
+}
+
+
+.card-img{
+    height: 200px;
+    background-image: url(laptop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /* tepadan radius qilish */
+}
+
+.card-body{
+    padding: 15px;
+    background-color: white;
+    height: 300px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /* pastdan radius qilish */
+}
+
+.card-titie h3{
+    margin: 15px o;
+    margin-top: 15px;
+}
+
+.card-titie button{
+    padding: 4px 16px;
+    border-radius: 15px;
+    background-color: blue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    
+   
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    ;
+
+}
+
+
+.card-titie p{
+    margin-top: 15px;
+}
+
+.footer-text{
+    margin-left: 15px;
+}
+
+
+.cards:hover{
+    /* transform:scale(1.2)  */
+    transform: translate(-30px);
+    transform: rotate(1);
+
+}
+
+.card-titie button:hover{
+    border-radius: 10px;
+    transform: scale(1.2);
+    transition: 1s;
+}
